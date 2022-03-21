@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+a{
+    text-decoration:none;   
+    color: white ;
+}
+.logInLink{
+  color: rgb(156, 92, 92);
+}
+body{
+    background: linear-gradient(107deg, rgb(13, 198, 180) 8.1%, rgb(33, 198, 138) 79.5%);
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.francis-container{
+    max-width: 800px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -8px 16px 25px 5px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+    /**border-radius: 304px;**/
+}
+
+.francis-row{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.francis-inner-container{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding: 45px;
+}
+
+.francis-inner-container:first-child {
+    background-image: url("https://raw.githubusercontent.com/waithakaFM/signup-frank-projo/main/fitty.jpeg");
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.francis-inner-container h1{
+    margin-bottom: 0;
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.francis-inner-container:first-child{
+    font-size: 14px;
+}
+
+.francis-inner-container img{
+    width: 100px;
+    margin: 0 auto 10px;
+}
+
+.francis-inner-container h2{
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #454545;
+}
+
+/* francis-form-holder */
+.francis-form-holder input {
+  width: 100%;
+  padding: 10px 0;
+  border: 1px solid #ccc;
+  border-color: transparent transparent #ccc;
+  margin: 7px 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.francis.form-holder input::placeholder {
+    color: #ccc;
+  }
+  
+ .francis.form-holder input:focus {
+    outline: none;
+}
+
+.password {
+    display: flex;
+}
+  
+.password input:first-child {
+    margin-right: 900px;
+}
+
+button {
+    display: block;
+    border: none;
+    background-color: #37a4db;
+    background: radial-gradient(circle at -0.2% 48.9%, rgb(32, 233, 104) 0%, rgb(13, 167, 236) 99.8%);
+    padding: 15px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    margin: 15px 0;
+    transition: all 0.5s linear;
+    cursor: pointer;
+  }
+  
+button:hover {
+    background-color: #0093d9;
+    box-shadow: 0px 3px 9px 2px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(107deg, rgb(13, 198, 180) 8.1%, rgb(33, 198, 138) 79.5%);
+  }
+
+button:focus {
+    outline: none;
+    }
+
+.inner_container .form-holder p:last-child {
+        font-size: 14px;
+      }
+
+.overlay {
+     position: relative ;
+  }      
+
+.overlay::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.card_holder.active .francis-front,
+.francis-back {
+  display: none;
+}
+
+.francis-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.francis-checkbox input {
+  width: auto;
+  margin-right: 10px;
+}
+
+.francis-checkbox {
+  font-size: 13px;
+  color: #5c5c5c;
+}
+
+.card_holder.active .francis-back {
+  display: flex;
+}
+
+@keyframes anim {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(0);
+  }
+}
+
+@media (max-width: 675px){
+  .francis-row{
+    flex-direction: column;
+  }
+ .francis-inner-container{
+   width: 100%;
+ } 
+}
