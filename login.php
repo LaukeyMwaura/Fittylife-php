@@ -19,22 +19,22 @@
                    <img src="https://raw.githubusercontent.com/waithakaFM/signup-frank-projo/main/life.jpg" alt="fittylife" class="francis">
                <div class="francis-front">
                    <h2>Please input your personal info</h2>
-                   <form action="" method="POST" enctype="multipart/form" >
+                   <form action="/php/signup.php" method="POST" enctype="multipart/form" >
                        <div class="francis-form-holder">
                            <input type="text" name="fname" id="name" required placeholder="Your first Name">
                             <input type="text" name="lname" id="name" required placeholder="Your last Name">
                            <input type="text" name="number" id="number" required placeholder="Your Phone Number">
                            <input type="email" name="email" id="email" required placeholder="Your email address">
                            <input type="password" name="password" id="password" placeholder="Password" required>
-                           <input type="password" name="password" id="password" placeholder="Confirm your Password" required>
-                           <button type="submit"><a href="">Sign Up</a> </button>
+                           <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm your Password" required>
+                           <button type="submit"><a href="./bmi.php">Sign Up</a> </button>
                            
                            <p>Already have an account? <span><a href="javascript:void(0)" id="logInLink" class="logInLink">Log In</a></span></p>
                        </div>
                    </form>
                </div>
                <div class="francis-back" >
-                   <form action="   " method="post" enctype="multipart/form">
+                   <form action="/php/login.php" method="post" enctype="multipart/form">
                        <div class="francis-form-holder">
                            <input type="text" name="email" id="email" placeholder="Your Email" required>
                            <input type="password" name="password" id="password" placeholder="Password" required>
